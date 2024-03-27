@@ -1,0 +1,15 @@
+<div class="card border" style="width: 18rem;">
+  <h2 class="card-header">Edit Todo Item</h2><br/>
+  <div class="card-body">
+    <%= render "form", list: @list %>
+
+  </div>
+</div>
+
+
+<br/><br/>
+
+<div>
+  <% link_to "Show this list", @list, class: 'btn btn-success' %> 
+  <%= link_to "Back to lists", lists_path, class: 'btn btn-success' %>
+</div>
